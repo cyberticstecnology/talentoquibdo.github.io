@@ -1,0 +1,120 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* GENERAL */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f5f5f5;
+}
+
+/* ENCABEZADO */
+header {
+    background: linear-gradient(to right, #007bff, #003d80);
+    color: white;
+    padding: 20px;
+}
+
+/* MENÚ DE NAVEGACIÓN */
+.menu {
+    position: sticky;
+    top: 0;
+    background-color: #007bff;
+    padding: 10px;
+    z-index: 1000;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 20px;
+}
+
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background 0.3s;
+}
+
+.menu ul li a:hover {
+    background-color: #003d80;
+    border-radius: 5px;
+}
+
+/* SECCIÓN DE SERVICIOS */
+.servicios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.servicio {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.servicio i {
+    font-size: 40px;
+    color: #007bff;
+}
+
+/* GALERÍA */
+.grid-galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    padding: 20px;
+}
+
+.grid-galeria img {
+    width: 100%;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.grid-galeria img:hover {
+    transform: scale(1.05);
+}
+
+/* CONTACTO */
+.contacto form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.contacto input, .contacto textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* REDES SOCIALES */
+.redes-container a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.redes-container i {
+    margin-right: 8px;
+}
+
+/* PIE DE PÁGINA */
+footer {
+    background-color: #222;
+    color: white;
+    padding: 15px;
+}
